@@ -1,0 +1,272 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+}
+.divblack{
+    background-color: rgb(68,68,68);
+    width: 100%;
+    height: 30px;
+    color: snow;
+    font-size: 8px;
+    text-align: right;
+    
+}
+.guanggao{
+    position: relative;
+    width: 60%;
+    line-height: 30px;  
+    margin: 0 auto;
+    z-index: 9999;
+}
+.divnavblack{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    color: snow;
+}
+.divnavblack::after{
+    background-color: rgb(12,12,12);
+    content: '';
+    position: absolute;
+    z-index: 98;
+    width: 100%;
+    height: 40px;
+    opacity: .7;
+    top: 0px;
+}
+.divnav{
+    width: 60%;
+    height: 40px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 99;
+}
+.nav{
+    display: inline-block;
+    
+}
+li{
+    display: inline-block;
+    padding: 0 45px;
+    /* transition: all 1s; */
+}
+li a{
+    color: snow;
+}
+
+.box1{
+    width: 60%;
+    height: 40px;
+    margin: 0 auto;
+    position:relative;
+    z-index: 9999;
+    line-height: 40px;
+    border-bottom: rgb(128,128, 128) 1px solid;
+}
+.embed{
+    height: 44px;
+}
+.box1 li a{
+    color: snow;
+}
+.lipad{
+    padding: 0 0 0 780px;
+}
+.s1{
+    width: 100%;
+    height: 700px;
+    padding: 80px 0;
+    background-color: rgba(19,19,19);
+}
+.s1 li{
+    display: block;
+}
+.s2,.s6{
+    text-align: center;
+}
+.s3{
+   padding-top: 65px;
+}
+.s9{
+    padding: 0 50px;
+    height: 500px ;
+}
+.s3{
+    color: sandybrown;
+    font-size: 16px;
+}
+.s4{
+    color: white;
+    font-size: 48px;
+}
+.s5{
+    color: white;
+    font-size: 16px;
+}
+.s7{
+    color : rgba(41,42,89);
+    font-size: 8px;
+}
+.s8{
+    color: rgba(20,80,224);
+}
+.s6{
+    border: 1px solid red;
+}
+.s14{
+    width: 100%;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-image: url(/素材/斜视眼.jpg);
+}
+.s10{
+    font-size: 48px;
+    color: black;
+    text-align: center;
+    padding: 50px;
+}
+.s11{
+    font-size: 16px;
+    color: black;
+    text-align: center;
+}
+.s12{
+    font-size: 16px;
+    color : rgba(41,42,89);
+    text-align: center;
+}
+.s13{
+    font-size: 16px;
+    text-align: center;
+    color : blue;
+}
+.s15{
+    
+    background-color: white;
+    width: 100%;
+    height: 800px;
+}
+.s16{
+    font-size: 48px;
+    text-align: center;
+}
+.s17{
+    text-align: center;
+    font-size: 16px;
+}
+.s18{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+.s19{
+    
+    text-align: center;
+    width: 60%;
+    margin-left: 400px;
+}
+.s21{
+    width: 100%;
+    height: 1920px;
+    float: left;
+}
+.s20{
+    width: 940px;
+    height: 620px;
+    overflow: hidden;
+    text-align: center;
+    margin: 4px;
+    background-color: rgba(250,250,250);
+    background-image: url(/素材/大图\ jpg);
+    background-repeat: no-repeat;
+    background-position: -215px 0;
+    float: left;
+}
+.s22{
+    width: 940px;
+    height: 640px;
+    overflow: hidden;
+    text-align: center;
+    margin: 4px;
+    background-color: rgba(250,250,250);
+    background-image: url(/素材/人头\ .jpg);
+    background-repeat: no-repeat;
+    background-position: -215px 0;
+    float: left;
+    
+}
+.s23{
+    width: 940px;
+    height: 650px;
+    overflow: hidden;
+    text-align: center;
+    margin: 4px;
+    background-color: rgba(250,250,250);
+
+    background-image: url(/素材/三表.jpg);
+    background-repeat: no-repeat;
+    background-position: 90px 150px;
+    float: left;
+}
+.s24{
+    width: 940px;
+    height: 620px;
+    overflow: hidden;
+    text-align: center;
+    margin: 4px;
+    background-color: rgba(250,250,250);
+    background-image: url(/素材/手表.jpg);
+    background-repeat: no-repeat;
+    background-position: 260px 180px;
+    float: left;
+}
+.s25{
+    width: 940px;
+    height: 620px;
+    overflow: hidden;
+    text-align: center;
+    margin: 4px;
+    background-color: rgba(250,250,250);
+    background-image: url(/素材/耳机.jpg);
+    background-repeat: no-repeat;
+    background-position: 240px 180px;
+    float: left;
+}
+.s26{
+    width: 940px;
+    height: 620px;
+    overflow: hidden;
+    text-align: center;
+    margin: 4px;
+    background-color: rgba(250,250,250);
+    background-image: url(/素材/五图);
+    background-repeat: no-repeat;
+    background-position: 0 100px;
+    float: left;
+}
+.s27{
+    text-align: center;
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    border: 1px solid yellow;
+    margin: 0 500px;
+}
+.s28{
+    width: 1000px;
+    height: 500px;
+    border: 1px solid yellow;
+}
+.s29{
+    height: 450px;
+    border: 1px solid yellow;
+}
+hr{
+    margin: 0 100px;
+}
+
+section{
+    overflow: hidden;
+}

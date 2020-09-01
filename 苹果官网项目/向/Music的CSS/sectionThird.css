@@ -1,0 +1,37 @@
+#idS3{
+    color: black;
+    overflow: hidden;
+}
+#idS3 ul{
+    width: 80%;
+    margin: 0 auto;
+}
+#idS3 li{
+    background-color: #fafafa;
+    /*width: 500px;*/
+    width: 48%;
+    height: 800px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    float: left;
+    margin-top: 30px;
+}
+#idS3 li>div{
+    padding-top: 65px;
+    height: 25%;
+}
+#idS3 li:nth-child(even){
+    margin-left: 48px;
+}
+#idS3 li:not(:nth-child(2))>img{
+    width: 330px;
+    padding-top: 56px;
+}
+#idS3 li:nth-child(2)>img{
+    width: 400px;
+}
+.classD1>p{
+    font-weight: bold;
+    font-size: 21px;
+}

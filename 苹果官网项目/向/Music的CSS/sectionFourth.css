@@ -1,0 +1,49 @@
+#idS4{
+    background-color: #1e1e1e;
+    overflow: hidden;
+    margin-top: 15px;
+    height: 850px;
+    text-align: center;
+}
+#idS4 div{
+    padding-top: 60px;
+    height: 150px;
+}
+#idS4 div>p{
+    font-size: 33px;
+}
+#idS4 ul{
+    overflow: hidden;
+}
+#idU1{
+    width: 91%;
+    margin: 0 auto;
+}
+#idU1 li:nth-child(odd)>img{
+    height: 300px;
+}
+#idU1 li:nth-child(2)>img{
+    height: 350px;
+    padding-left: 49px;
+    padding-right: 50px;
+}
+#idU1>li{
+    float: left;
+    padding-left: 87px;
+}
+#idU2{
+    width: 60%;
+    margin: 0 auto;
+    height: 200px;
+    padding-top: 70px;
+}
+#idU2>li{
+    float: left;
+    padding-left: 14%;
+}
+#idU2 img{
+    height: 80px;
+}
+#idU2 p,#idS5 p{
+    padding-bottom: 10px;
+}

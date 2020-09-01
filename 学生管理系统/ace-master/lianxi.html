@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      h1{
+          text-align: center;
+      }
+     body{
+       text-align: center; 
+      }
+      #xinxi{
+        display: none;
+        height: 400px;
+          width: 300px;
+          padding: 10px;
+          margin: 0 auto;
+        text-align: center;
+        background-color:yellow;
+        opacity: 0.5;
+      }
+      #tid{
+         
+          margin: 0 auto;
+      }
+      #btn{
+          text-align: center;
+      }
+      </style>
+</head>
+<body >
+    <h1>管理系统</h1>
+        <div id="yi">
+        <table border="2" id="tid" class="table  table-bordered table-hover">
+            <tr>
+                <td></td>
+                <td>姓名</td>
+                <td>年龄</td>
+                <td>学号</td>
+                <td>性别</td>
+                <td>专业</td>
+                <td>班级</td>
+                <td>成绩</td>
+                <td>籍贯</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" onclick="checkAll(this)"/></td>
+                <td colspan="6"><a href="javascript:;" class="btn btn-danger" role="button" onclick="delAll(this)">全部删除</a></td>
+            </tr>
+            <div id="motai">
+               
+            </div>
+            <!-- 模态框 -->
+            <div id="xinxi"> 
+                <div>
+                    <label for="name">姓名：</label><input id="name" type="text"><br>
+                    <label for="age">年龄：</label><input id="age" type="text"><br><br>
+                    <label for="id">学号：</label><input readonly id="id" type="number"><br><br>
+                    性别：<input type="radio" name="sex" id="nan" value="男"><label for="nan">男</label>
+                    <input type="radio" name="sex" id="nv" value="女"><label for="nv">女</label><br><br>
+                    <label for="zhuanye">专业：</label><input id="zhuanye" type="text"><br><br>
+                    <label for="bj">班级：</label><input id="bj" type="text"><br><br>
+                    <label for="city">城市：</label><input id="city" type="text"><br><br>
+                </div>
+                <div id="an">
+                    <button id="quxiao">取消</button>
+                    <button id="tianjia">添加</button>
+                    <button id="xiugai">修改</button>
+                </div>
+            </div>
+            <tr>
+                <td><input type="checkbox" name="item" /></td>
+                <td>伏二戴</td>
+                <td>18</td>
+                <td>123456</td>
+                <td>男</td>
+                <td>电子竞技</td>
+                <td>3</td>
+                <td>97</td>
+                <td>巴中</td>
+                <!-- <td>
+                    <input type="button" name="" value="删除" class="btn btn-danger" onclick="del(this)" />
+                    <input type="button" name="" value="修改" class="btn btn-info" onclick="modify(this)" />
+                </td> -->
+                
+            
+            
+        </table>
+        <!-- <input type="button" value="添加行" onclick="addtr()"> -->
+        <div id="btn">
+            <button id="firstPage">首页</button>
+            <button id="pre">上一页</button><span id="first">1</span>/<span id="cont">4</span>
+            <button id="next">下一页</button>
+            <button id="lastPage">尾页</button>
+            <input id="page" placeholder="页数" type="number"><button id="tiaoZhuan">跳转</button>
+            <!-- <button id="addBtn">添加学生信息</button> -->
+            <!-- Button trigger modal -->
+            <div class="top">
+                <button id="addBtn"  type="button"  data-toggle="modal" data-target="#myModal">
+                    添加学生信息
+                </button>
+            </div>
+    </div>
+        <script>
+            var stuArr=JSON.parse(localStorage.student);
+            var arr=[];
+
+            firstPage(stuArr,1,5);
+
+            pageTable();
+
+            // 初始化表格 
+            function pageTable(){
+                contPage(stuArr,5);
+                render(arr);
+            }
+
+            function render(arr){
+                var tr='';
+                $.each(arr,function(index,arr){
+                   tr+='<tr>'+ 
+                    '<td>'+arr.name+'</td>'+
+        '<td>'+arr.age+'</td>'+
+        '<td>'+arr.number+'</td>'+
+        '<td>'+arr.sex+'</td>'+
+        '<td>'+arr.zhuanye+'</td>'+
+        '<td>'+arr.bj+'</td>'+
+        '<td>'+arr.city+'</td>'+
+        '<td><button class="delbt" data-index='+index+'>删除</button>&emsp;<button class="update" data-index='+index+'>修改</button>'+'</tr>';
+                })
+                $('toby').html(tr);
+                console.log(tr)
+            }
+
+            //第一页获取数据
+            function firstPage(ar,index,page){
+                arr=ar.slice((index-1)*page,index*page);
+                $('#first').text(1);
+            }
+            //总页数
+            function contPage(arr,page){
+                $('#cont').text(Math.ceil(arr.length/page));
+                var first=$('#first').text();
+                var cont=$('#cont').text();
+                if(first>cont){
+                    first=cont;
+                    $('#first').text(first);
+                }
+    
+        }
+        //下一页
+        $('#next').on(
+            'click',function(){
+                var firsr=$('#first').text();
+                var cont=$('#cont').text();
+                if(first<cont){
+                    arr=stuArr.slice(first*5,(number(first)+1)*5)
+                    console.log(arr);
+                }
+        
+            })
+
+
+
+            //删除数据
+            $('table').on('click','.delbt',function(){
+                var num=($('#first').text()-1)*5+$(this).data('index');
+                console.log(num);
+            })
+            localStorage.setItem('student',JSON.stringify(stuArr));
+            contPage(stuArr,5); 
+
+            //页数下标
+            var index=$('#first').text();
+
+    arr=stuArr.slice((index-1)*5, index * 5);
+
+    pageTable();
+    // console.log(localStorage.xs);
+    
+// })
+
+
+            
+//修改  弹出模态框
+$('table').on('click','.update',function(){
+    $('#xiuGai').css('display','block');
+    $('#queRen').css('display','none');
+    $('#modal').css('display','block');
+    $('#xinxi').css('display','block');
+
+    //stuArr中的下标
+    var num=($('#first').text()-1)*5+$(this).data('index');
+    //存入数据
+    localStorage.setItem('index',num);
+    //显示信息
+    $('#uname').val(stuArr[num].name);
+    $('#age').val(stuArr[num].age);
+    $('#id').val(stuArr[num].number);
+    // $('#id').css('readonly',readonly);
+    //判断性别
+    var sex=stuArr[num].sex;
+    if(sex=='男'){
+        $('[name=sex]:eq(0)').prop('checked',true);
+    }else{
+        $('[name=sex]:eq(1)').prop('checked',true);
+    }
+    $('#zhuanye').val(stuArr[num].zhuanye);
+    $('#bj').val(stuArr[num].bj);
+    $('#city').val(stuArr[num].city);
+    
+    
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            // console.log((window.location.href).split("#"));
+            // var qx = (window.localStorage.href).split('#');
+            // console.log(qx[1]) 
+            // var xb = 0;
+            // for(var i=0;i<student.lenth;i++){
+            //     if(yhm == student[i].yhm){
+            //         xb = 1;
+            //         // break; 
+            //     }
+
+            // }
+            // console.log($('#xm').val())    
+            // $('#xm').val(student[xb].name);
+			// $('#nl').val(student[xb].age);
+			// $('#xh').val(student[xb].number);
+			// $('#xb').val(student[xb].sex);
+			// $('#zy').val(student[xb].zhuanye);
+			// $('#bj').val(student[xb].bj);
+			// $('#cj').val(student[xb].chengji);
+			// $('#dz').val(student[xb].city);
+			// $('#tx').val(student[xb].tp);       
+        </script>
+</body>
+</html>

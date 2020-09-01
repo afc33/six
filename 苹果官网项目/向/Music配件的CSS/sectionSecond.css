@@ -1,0 +1,111 @@
+#idS2{
+    margin-bottom: 50px;
+    overflow: hidden;
+    /*position: relative;*/
+}
+#s2Head{
+    width: 70%;
+    height: 60px;
+    margin: 0 auto;
+    line-height: 60px;
+}
+#s2Head>div{
+    float: right;
+    position: relative;
+}
+#s2Head p{
+    height: 60px;
+    font-size: 10px;
+    overflow: hidden;
+}
+#s2Head>div>p:hover+ul{
+    display: block;
+}
+#s2Head ul{
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    display: none;
+    clear: both;
+    padding: 0 30px 30px 30px;
+}
+#s2Head ul>li{
+    height: 35px;
+    width: 100px;
+    font-size: 13px;
+}
+#s2List{
+    width: 200px;
+    float: left;
+    padding-left: 200px;
+}
+#s2List>ul>li{
+    height: 20px;
+    padding-top: 15px;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 15px;
+}
+#s2List ol>li{
+    line-height: 30px;
+    font-size: 13px;
+}
+#s2List ol{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#s2List>ul>li:hover{
+    height: 270px;
+}
+.list1:hover{
+    height: 90px;
+}
+.list3:hover{
+    height: 120px;
+}
+.list4:hover{
+    height: 180px;
+}
+.list5:hover{
+    height: 210px;
+}
+.list8:hover{
+    height: 300px;
+}
+#color{
+    width: 100px;
+    overflow: hidden;
+}
+#color img{
+    height: 20px;
+    padding: 10px;
+}
+#color>li{
+    float: left;
+}
+#s2Table{
+    overflow: hidden;
+}
+#s2Table>div{
+    width: 300px;
+    height: 480px;
+    overflow: hidden;
+    display: inline-block;
+    margin: -2px;
+    outline: 1px solid #87878c;
+}
+.advPhoto{
+    width: 300px;
+    padding-top: 30px;
+}
+#s2Table p{
+    text-align: center;
+    height: 30px;
+}
+.serve{
+    font-size: 10px;
+    color: #e95e02;
+}
+.changeC:hover{
+    color: #5a51ff;
+}

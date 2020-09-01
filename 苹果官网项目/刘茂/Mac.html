@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Mac-Apple（中国大陆）</title>
+    <link href="../images/苹果2.ico" rel="icon" type="image/x-ico">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+        body{
+            min-width: 1700px;
+        }
+        /*导航栏*/
+        nav div:first-child{
+            height: 50px;
+            background-color: #444444;
+        }
+        nav div:nth-child(2){
+            height: 50px;
+            background-color: #141414;
+            text-align: center;
+        }
+        nav div ul{
+            width: 62%;
+            overflow: hidden;
+            margin: auto;
+        }
+        nav div ul li{
+            float: left;
+            /*border: 1px solid white;*/
+            color: white;
+            padding: 5px 45px;
+            line-height: 40px;
+        }
+        nav div ul li img{
+            width: 30px;
+            padding-top:5px ;
+        }
+        nav div:nth-child(2) a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .box{
+            /*border: 1px solid red;*/
+            width: 70%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .header{
+            overflow: hidden;
+        }
+        .header img{
+            float: right;
+            width: 50%;
+            margin:2% 10% 0 0;
+        }
+        .div1{
+            /*border:  1px solid red;*/
+            overflow: hidden;
+        }
+        .div1 div{
+            /*border:  1px solid red;*/
+            float: right;
+            width: 20%;
+            height: 250px;
+            margin-right: 10%;
+
+        }
+        .div1 div p:first-child{
+            color: red;
+            padding: 3% 0 6% 0;
+        }
+        .div1 div h1{
+            margin-top: 12px;
+        }
+        
+        button{
+            display: block;
+            margin: 20px 0 20px 0;
+            padding: 5px 10px;
+            color: white;
+            border-radius: 20px;
+            border: 0px;
+            background-color: #0071E3;
+        }
+        .div2{
+            overflow: hidden;
+        }
+        .div2 img{
+            margin-left: 50px;
+            float: left;
+
+        }
+        .div2 div{
+            /*border:  1px solid red;*/
+            float: left;
+            width: 20%;
+            height: 250px;
+            margin-right: 5%;
+            margin-top: 80px;
+        }
+        #div1img{
+            margin-top: 20px;
+            height: 200px;
+        }
+
+
+        /*第一部分内容*/
+        .section1{
+            background-color: #F2F2F2;
+            overflow: hidden;
+        }
+        .section1 h1{
+            text-align: center;
+            width: 220px;
+            margin: 40px auto;
+        }
+        .section1 ul{
+            padding: 0 0 0 183px;
+            overflow: hidden;
+        }
+        .section1 ul li{
+            float: left;
+            text-align: center;
+
+        }
+        .section1 ul li:nth-child(2){
+            margin: 0 186px;
+        }
+        .section1 .div2 ul li{
+            text-align: left;
+        }
+        .section1 .div2 ul li p{
+            margin: 10px 0 0 5px;
+        }
+        #li{
+            margin: 0 105px;
+        }
+        .section1 .div2>p{
+            text-align: center;
+            margin: 50px;
+            color: #619EDB;
+        }
+        /*第二部分内容*/
+        .section2{
+            overflow: hidden;
+        }
+        #div1{
+            overflow: hidden;
+            float: left;
+        }
+        #div1 div:first-child{
+            background-color: #F2F2F2;
+            overflow: hidden;
+            float: left;
+            text-align: center;
+            margin-top: 20px;
+            width: 600px;
+            height: 600px;
+        }
+        #div1 img{
+            margin-top: 140px;
+        }
+        #div1>div:first-child div{
+            width: 300px;
+            height: 200px;
+            margin: 50px 0 0 140px;
+        }
+        #div1>div:first-child div h1{
+            margin: 10px;
+            font-size: 30px;
+        }
+        #div1>div:first-child div button{
+            margin-left: 120px;
+        }
+
+        #div2 div{
+            background-color:#F2F2F2 ;
+            float: right;
+            margin-top: 20px;
+            height: 600px;
+            width: 693px;
+            text-align: center;
+            overflow: hidden;
+        }
+        #div2 div div{
+            text-align: center;
+            /*border: 1px solid;*/
+            margin: 50px 150px 0 0;
+            width: 300px;
+            height: 310px;
+            margin: 40px 200px 0 0;
+        }
+        #div2 div div h1{
+            margin: 10px 0;
+            font-size: 30px;
+        }
+        #div2 div div P:nth-child(4){
+           padding: 7px 0;
+        }
+        #div2 div img{
+            margin-top: 47px;
+        }
+        a{
+            text-decoration: none;
+            color: #0066CC;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+
+        /*第三部分内容*/
+        .section3{
+            overflow: hidden;
+            margin-top: 100px;
+        }
+        .section3 #section3div1{
+            /*border: 1px solid;*/
+            text-align: center;
+            padding: 0 0 0 300px;
+            overflow: hidden;
+        }
+        .section3 #section3div1 div{
+            /*border: 1px solid;*/
+            float: left;
+            text-align: center;
+            width: 250px;
+            margin-right: 200px;
+        }
+        .section3 #section3div1 div:first-child img{
+            width: 43px;
+        }
+        .section3 h1{
+            margin: 50px 0;
+            text-align: center;
+            font-size: 50px;
+
+        }
+        
+        
+        /*第四部分*/
+        .section4{
+            /*border: 1px solid;*/
+            background-image:url("Macimg/QQ截图20200704134314.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 500px;
+        }
+
+        /*第五部分*/
+        .section5{
+            overflow: hidden;
+        }
+        .section5 div{
+            background-color: #FAFAFA;
+            float: left;
+            width: 49%;
+            height: 520px;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+        /* .section5 div:first-child{ */
+            /* margin-right: 30px; */
+        /* } */
+        .section5 div:nth-child(2){
+            float: right;
+        }
+        .section5 div div{
+            /*border: 1px solid;*/
+            width: 400px;
+            height: 600px;
+            text-align: center;
+            margin-left: 60px;
+            padding: 20px 0 0 0 ;
+            overflow: hidden;
+        }
+        .section5 img{
+            display: block;
+            width: 400px;
+            margin-top: 50px;
+        }
+        .section5 h1{
+            font-size: 40px;
+        }
+
+        .section5 p{
+            margin: 10px 0;
+        }
+
+        .section5>div:last-child div img{
+            margin-top: 100px;
+        }
+
+        /*第六部分*/
+        .section6{
+            background-color: #FAFAFA;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        .section6 div:first-child{
+            /*border-bottom: 1px solid;*/
+            text-align: center;
+            margin-top: 50px;
+        }
+        .section6 h1{
+            font-size: 40px;
+        }
+        .section6 p{
+            margin: 20px;
+        }
+
+        .section6>div:nth-child(2){
+            /*border-bottom: 1px solid;*/
+            width: 700px;
+            overflow: hidden;
+            position: relative;
+            margin: auto;
+        }
+        .section6>div:nth-child(2) ul{
+            width: 3000px;
+        }
+        .section6>div:nth-child(2) ul:hover li{
+            animation-play-state: paused;
+        }
+        .section6 li{
+            float: left;
+            margin-left: 10px;
+            /*position: absolute;*/
+            animation: myAnimation 20s infinite;
+        }
+        /*动画*/
+        @keyframes myAnimation  {
+            0%{
+                transform: translate(0px);
+            }
+            8.3%{
+                transform: translate(-100px);
+             }
+            16.6%{
+                transform: translate(-200px);
+            }
+            24.9%{
+                transform: translate(-300px);
+            }
+            33.2%{
+                transform: translate(-400px);
+            }
+            41.5%{
+                transform: translate(-500px);
+            }
+            49.8%{
+                transform: translate(-600px);
+            }
+            58.1%{
+                transform: translate(-700px);
+            }
+            66.4%{
+                transform: translate(-800px);
+            }
+            74.7%{
+                transform: translate(-900px);
+            }
+            83%{
+                transform: translate(-1000px);
+            }
+            91.3%{
+                transform: translate(-1100px);
+            }
+            100%{
+                transform: translate(-1200px);
+            }
+
+        }
+
+        .section6 div:nth-child(3){
+            width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .section6 div:nth-child(3) img{
+            display: block;
+            width: 500px;
+            margin: 50px auto;
+        }
+        #section6p1{
+            width: 550px;
+            margin: 20px auto;
+        }
+        hr{
+            margin: 20px 0;
+        }
+        .section6 div:nth-child(4){
+            margin: 40px;
+            text-align: center;
+        }
+        .section6 div:nth-child(4) img{
+            vertical-align: middle;
+        }
+        .section8{
+            overflow: hidden;
+        }
+        .section8-1{
+            text-align: center;
+            font-size: 40px;
+            margin: 50px;
+        }
+        .section8-2 img{
+            width: 49%;
+        }
+        .section8-2 img:first-child{
+            float: left;
+        }
+        .section8-2 img:last-child{
+            float: right;
+        }
+
+        .section8-3 img{
+            margin-top: 20px;
+            width: 100%;
+        }
+        /*结尾*/
+        footer{
+            background-color: #F5F5F7;
+            overflow: hidden;
+            margin-top: 40px;
+        }
+        footer div:first-child{
+            width: 65%;
+            margin: auto;
+            overflow: hidden;
+        }
+        footer div:first-child p{
+            margin: 20px 0;
+        }
+        footer div:nth-child(2){
+            width: 65%;
+            margin: auto;
+            overflow: hidden;
+        }
+        footer div:nth-child(2) img{
+            width: 30px;
+            vertical-align:middle;
+        }
+        footer>div:nth-child(3){
+            width: 65%;
+            margin:20px auto;
+        }
+        footer div:nth-child(3) ul{
+            float: left;
+        }
+        footer>div:nth-child(3) ul li{
+            margin: 10px 0;
+        }
+        footer li:first-child{
+            font-weight: 700;
+        }
+        footer>div:nth-child(3){
+            overflow: hidden;
+        }
+        footer>div:nth-child(3) div{
+            width: 140px;
+            /*border: 1px solid white;*/
+            float: left;
+            margin-top: 0px;
+        }
+        footer>div:nth-child(3) div:not(:last-child){
+            margin: 0 128px;
+        }
+        footer div a{
+            color: black;
+        }
+        #footerdiv{
+            width: 65%;
+            margin: auto;
+        }
+        #footerdiv p a{
+            color: #0066CC;
+        }
+        #top{
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            width: 100px;
+        }
+        #head span{
+            float: right;
+            margin-right:350px ;
+            color: #a8a8aa;
+            line-height: 50px;
+        }
+        #sousuo{
+            margin-top: 5px;
+        }
+        nav div:last-child{
+            height: 100px;
+            text-align: center;
+            background-color:#F9F9FA ;
+        }
+        nav div:last-child img{
+            width: 1000px;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <!--回到顶部-->
+    <a href="#head"><img id="top" src="Macimg/fa4f6ce12e00f2efc429f833f40d4f212a8f.png" alt=""/></a>
+    <!--导航栏-->
+    <nav>
+        <div id="head"><span>&lt;广告&gt;</span></div>
+        <div>
+            <ul>
+                <li><a href="../首页.html"><img src="Macimg/cd70dd52f0605e356f5eee244cb22d5.png" alt=""/></a></li>
+                <li><a href="Mac.html">Mac</a></li>
+                <li><a href="">iPad</a></li>
+                <li><a href="../apple.html">ios13</a></li>
+                <li><a href="../乾/Watch.html">Watch</a></li>
+                <li><a href="../向/appleMusic.html">Music</a></li>
+                <li><a href="../伏/苹果官网/技术支持.html">技术支持</a></li>
+                <li><img id="sousuo" src="Macimg/QQ截图20200706093157.png" alt=""/></li>
+                <li><img src="Macimg/QQ截图20200706093222.png" alt=""/></li>
+            </ul>
+        </div>
+        <div>
+            <img src="../刘茂/Macimg/QQ截图20200707180404.png" alt="">
+        </div>
+    </nav>
+    <div class="box">
+        <!--头部-->
+        <div class="header">
+            <div class="div1">
+                <img src="Macimg/macbook_pro_13__ep96x983izyq_large.jpg" alt=""/>
+                <div>
+                    <p>新款</p>
+                    <p>13英寸</p>
+                    <h1>MacBook Pro</h1>
+                    <h4>动力,行动力。</h4>
+                    <button>购买</button>
+                    <a href="">进一步了解&gt;</a>
+                </div>
+            </div>
+            <div class="div2">
+                <img src="Macimg/QQ截图20200704095449.png" alt=""/>
+                <div>
+                    <p>16英寸</p>
+                    <h1>MacBook Pro</h1>
+                    <h3>高能,召唤高手。</h3>
+                    <button>购买</button>
+                    <a href="">进一步了解》</a>
+                </div>
+            </div>
+            <div class="div1">
+                <img id="div1img" src="Macimg/QQ截图20200704100824.png" alt=""/>
+                <div>
+                    <p>新款</p>
+                    <h1>MacBook Air</h1>
+                    <h4>够轻，够轻快</h4>
+                    <button>购买</button>
+                    <a href="">进一步了解&gt;</a>
+                </div>
+            </div>
+        </div>
+        <!--第一部分内容-->
+        <section class="section1">
+            <h1>哪款Mac笔记本电脑适合你?</h1>
+            <div class="div1">
+                <ul>
+                    <li>
+                        <img src="Macimg/QQ截图20200704102532.png" alt=""/>
+                        <h3>MacBook Air</h3>
+                        <p>RMB 7999起</p>
+                    </li>
+                    <li>
+                        <img src="Macimg/QQ截图20200704102542.png" alt=""/>
+                        <h3>MacBook Pro 13英寸</h3>
+                        <p>RMB 9999起</p>
+                    </li>
+                    <li>
+                        <img src="Macimg/QQ截图20200704102555.png" alt=""/>
+                        <h3>MacBook Pro 16英寸</h3>
+                        <p>RMB 18999起</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="div2">
+                <ul>
+                    <li>
+                       <p>13.3美寸物网膜显示屏</p>
+                       <p>是富可选配4模Intel Core 17处理器
+                       <p>是高可配16GB内寿</p>
+                       <p>是本可去2 2TB存情设备</p>
+                       <p>电池频就时间墨长可达11小时</p>
+                       <p>触控ID</p>
+                       <p>背光妙控缝盘</p>
+                       <p><button>购买</button></p>
+                       <p><a href="">进一步了解》</a></p>
+                    </li>
+                    <li id="li">
+                        <p>13.3美寸物网膜显示屏</p>
+                        <p>是富可选配4模Intel Core 17处理器
+                        <p>是高可配16GB内寿</p>
+                        <p>是本可去2 2TB存情设备</p>
+                        <p>电池频就时间墨长可达11小时</p>
+                        <p>触控ID</p>
+                        <p>背光妙控缝盘</p>
+                        <p><button>购买</button></p>
+                        <p><a href="">进一步了解》</a></p>
+                    </li>
+                    <li>
+                        <p>13.3美寸物网膜显示屏</p>
+                        <p>是富可选配4模Intel Core 17处理器
+                        <p>是高可配16GB内寿</p>
+                        <p>是本可去2 2TB存情设备</p>
+                        <p>电池频就时间墨长可达11小时</p>
+                        <p>触控ID</p>
+                        <p>背光妙控缝盘</p>
+                        <p><button>购买</button></p>
+                        <p><a href="">进一步了解》</a></p>
+                    </li>
+                </ul>
+                <p><a href="">Mac 机型比较&gt;</a></p>
+            </div>
+        </section>
+
+        <!--第二部分内容-->
+        <section class="section2">
+            <div id="div1">
+                <div>
+                    <div>
+                        <p>配件</p>
+                        <h1>探索MacBook Pro的精彩配件。</h1>
+                        <button>选购</button>
+                    </div>
+                    <img src="Macimg/QQ截图20200704111220.png" alt=""/>
+                </div>
+            </div>
+            <div id="div2">
+                <div>
+                    <div>
+                        <p>Apple Trade In换购计划</p>
+                        <h1>用你现有的电脑换购，享受最高达</h1>
+                        <h1>RMB 8700 的折抵优惠*</h1>
+                        <p>你可用符合条件的电脑末获博折抵优惠，也可选择免党回收处理。这样来.你受益，地球也党益。</p>
+                        <a href="">了解你设备的折抵金智></a>
+                    </div>
+                    <img src="Macimg/QQ截图20200704111238.png" alt=""/>
+                </div>
+            </div>
+        </section>
+
+        <!--第三部分内容-->
+        <section class="section3">
+            <div id="section3div1">
+                <div>
+                    <img src="Macimg/QQ截图20200704131523.png" alt=""/>
+                    <h4>免费送货</h4>
+                    <p>符合条件的信用卡用户可选择灵活的分期付款方式。</p>
+                    <a href="">进一步了解></a>
+                </div>
+                <div>
+                    <img src="Macimg/icon_financing_large.png" alt=""/>
+                    <h4>分期付款</h4>
+                    <p>符合条件的信用卡用户可选择灵活的分期付款方式。</p>
+                    <a href="">进一步了解></a>
+                </div>
+            </div>
+            <h1>为什么Mac就是那么不一样?</h1>
+        </section>
+        
+        <!--第四部分-->
+        <section class="section4">
+
+        </section>
+
+        <!--第五部分-->
+        <section class="section5">
+            <div>
+                <div>
+                    <h1>macOS</h1>
+                    <p>Mac如此强大好用,mac;os这一操作系续功不可没,它为Mace得别打治，采用了教硬件协同设计，,能帮助你得心应手地处理各种事情。</p>
+                    <a href="">进一步了解》</a>
+                    <img src="Macimg/QQ截图20200704140824.png" alt=""/>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h1>iCloud</h1>
+                    <p>iCloud可以安全存储你的照片、视频、文稿、信息、育乐、app等内容,并能在你的各种设备上同步保持更新*。因此，你可以更自由、更方便地访问你想要的内</p>
+                    <a href="">进一步了解》</a>
+                    <img src="Macimg/QQ截图20200704140847.png" alt=""/>
+                </div>
+            </div>
+        </section>
+
+        <!--第六部分-->
+        <section class="section6">
+            <div>
+                <h1>内置App</h1>
+                <p>
+                    每台Mac都内i了众多激发创意提升效率的app,帮助你去探索、交流、高效工作。
+                </p>
+            </div>
+            <div>
+                <ul>
+                    <li><img src="Macimg/QQ截图20200704144615.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144641.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144659.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144716.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144736.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144751.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144808.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144824.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144840.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144901.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144916.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144937.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144615.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144641.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144659.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144716.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144736.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144751.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144808.png" alt=""/></li>
+                </ul>
+            </div>
+           <div>
+               <p>
+                   能让你日益庞大的照片图库变得并并有条，并易于查看。还能帮助你美化园像，创怍精彩照片。更有iCloud
+                   照片:让你可以将值得长久珍藏的照片和视频保存在云端*.
+               </p>
+               <a href="">进一步了解照片></a>
+               <img src="Macimg/QQ截图20200704160343.png" alt=""/>
+           </div>
+        </section>
+
+        <!--第七部分-->
+        <section class="section6">
+            <div>
+                <h1>专业App</h1>
+                <p id="section6p1">
+                    对于想要尽情发挥创意的专业人士而言，这里有众多为业界所推崇的app,
+                    可以用来更好地掌控音乐与影片的剪辑、处理和输出。
+                </p>
+            </div>
+            <div>
+                <ul>
+                    <li><img src="Macimg/QQ截图20200704144615.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144641.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144659.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144716.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144736.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144751.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144808.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144824.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144840.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144901.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144916.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144937.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144615.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144641.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144659.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144716.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144736.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144751.png" alt=""/></li>
+                    <li><img src="Macimg/QQ截图20200704144808.png" alt=""/></li>
+                </ul>
+            </div>
+            <div>
+                <p id="section6p2">
+                    备的录音和MIDI工作室，.
+                    以别开生面的方式满足你作曲、录育、Logic Pro在你的Mac上构建起一座完齐备的插件，
+                    ，以及数千种声音和很环乐段。，无论你想创作哪种音乐，都编辑和温音的各种所需。
+                    ,有了大量功了大需使院人员多部风究先充或基后的母带的各种所器。
+                </p>
+                <a href="">进一步了解照片></a>
+                <img src="Macimg/QQ截图20200704160837.png" alt=""/>
+                <hr/>
+
+
+            </div>
+            <div>
+                <img src="Macimg/QQ截图20200704161724.png" alt=""/>
+                Mac App Store备有精心编辑的丰富内容，以及面向Mac的精彩app.
+                <a href="">探索Mac App Store》</a>
+            </div>
+        </section>
+
+        <!--第八部分-->
+        <section class="section8">
+            <div class="section8-1">
+                <h1>尽享Mac的精彩</h1>
+            </div>
+            <div class="section8-2">
+                <img src="Macimg/QQ截图20200704163223.png" alt=""/>
+                <img src="Macimg/QQ截图20200704163233.png" alt=""/>
+            </div>
+            <div class="section8-3">
+                <img src="Macimg/QQ截图20200704163247.png" alt=""/>
+            </div>
+        </section>
+    </div>
+    <!--结尾-->
+    <footer>
+        <div>
+            <p>
+                ↑上述所示MacBook Air的分期付歌金额仅为便用特定期数免息分期付教估算得出的示例(仅显示整数数即,未显利小教点以后的金额)，实际支付金额以银行账单为准。最高可享24期免息分期，到
+                Apple Store零售店和在线商店购买时可享受的免总分期期数和最低限额可能有所不同，银行和花观提供的免息分期期数和最低限额可能有所不同。银行或花呗可能要求你的可用信用额度大于所购买产品的总金
+                题,才能便用分期付致服务。有关信用卡或花呗分期服务的申请及便用问题。请与银行或花呗联系. Apple对此不做任何承诺和保证。订单可能需要满足特定金额要求，如需了解更多免息分期付歌信息，谓点击
+                *折抵金额以状况良好的15封MacBook Pro (2019 年机型)计算得出。实际折抵金额取决于设备的状况，配1 t、 制這年份，以及发售国家或地区。年满18周岁及以上者才能享受此项折抵换购服务。并非所
+                有设备都符合折抵换购条件。Apple Store零售店不提供电脑产品的折抵换购服务。Apple的折抵服务合作伙伴将提供关于符台条件设备的折抵与回收的更多信息。可能需要循限定条歌和条件。所支付金额基
+                于所收到的设备状况与在估算折抵金额时你所提供的描述是否相符。Apple或其折抵服务合作伙伴保贸出于任何原因拒增或限制任何设备(及其数t) 的权利。
+
+            </p>
+           <p>
+               1.屏幕尺寸为对角线长度。
+           </p>
+            <p>
+                2.1TB- 1万亿字节，格式化之后的实际容可能较小。
+            </p>
+            <p>
+                3.电池须航时间依便用情况和设的不同可能有所差异，详情请参阅apple.com.cn/batteries.
+            </p>
+           <p>
+               4. iCloud 在中国内地由云上贵州(云上艾珀(贵州)技术有限公司)运营。
+           </p>
+            <hr/>
+        </div>
+        <div>
+            <img src="Macimg/QQ截图20200706095333.png" alt=""/>&gt; Mac
+        </div>
+        <div>
+            <ul>
+                <li>选购及了解</li>
+                <li><a href="">Mac</a></li>
+                <li><a href="">iPad</a></li>
+                <li><a href="">iPhone</a></li>
+                <li><a href="">Watch</a></li>
+                <li><a href="">Music</a></li>
+                <li><a href="">AirPods</a></li>
+                <li><a href="">HomePod</a></li>
+                <li><a href="">iPod touch</a></li>
+                <li><a href="">配件</a></li>
+                <li><a href="">App Store充值卡</a></li>
+            </ul>
+            <div>
+                <ul>
+                    <li>服务</li>
+                    <li><a href="">Apple Music</a></li>
+                    <li><a href="">iCloud</a></li>
+                </ul>
+                <ul>
+                    <li>账户</li>
+                    <li><a href="">管理你的Apple ID</a></li>
+                    <li><a href="">Apple Store账户</a></li>
+                    <li><a href="">iCloud.com</a></li>
+                </ul>
+            </div>
+            <ul>
+                <li>Apple Store商店</li>
+                <li><a href="">看找零售店</a></li>
+                <li><a href="">在线选购</a></li>
+                <li><a href="">Genius Bar天才吧</a></li>
+                <li><a href="">Today at Apple</a></li>
+                <li><a href="">Apple夏令营</a></li>
+                <li><a href="">Field Trip课外活动</a></li>
+                <li><a href="">Apple Store App</a></li>
+                <li><a href="">邮新和优惠</a></li>
+                <li><a href="">分期付歌</a></li>
+                <li><a href="">Apple Trade In换购计划</a></li>
+                <li><a href="">订单状态</a></li>
+                <li><a href="">选购帮助</a></li>
+            </ul>
+            <div>
+                <ul>
+                    <li>商务应用</li>
+                    <li><a href="">Apple与商务</a></li>
+                    <li><a href="">商务选购</a></li>
+                </ul>
+                <ul>
+                    <li>教育应用</li>
+                    <li><a href="">Apple与教育</a></li>
+                    <li><a href="">高校师生选购</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Apple价值观</li>
+                    <li><a href="">辅助功能</a></li>
+                    <li><a href="">环境责任</a></li>
+                    <li><a href="">隐私</a></li>
+                    <li><a href="">供应商责任</a></li>
+                </ul>
+                <ul>
+                    <li>关于Apple</li>
+                    <li><a href="">Newsroom</a></li>
+                    <li><a href="">Apple管理层</a></li>
+                    <li><a href="">工作机会</a></li>
+                    <li><a href="">创造就业</a></li>
+                    <li><a href="">活动</a></li>
+                    <li><a href="">联系Apple</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="footerdiv">
+            <p>更多选购方式:<a href="">查找你附近的Apple Store零售店</a>及<a href="">更多门店</a>，或者致电400-666-8800.</p>
+            <hr/>
+            <span>Copyright◎2020 Apple Inc.保留所有权利。</span>
+            <a href="">隐私政策</a> |
+            <a href="">便用条歌</a> |
+            <a href="">销售政策</a> |
+            <a href="">法律信息</a> |
+            <a href="">网站地图</a>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,294 @@
+*{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#sy{
+    background-color: black;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    color:white;
+    overflow: hidden;
+    padding: 0 248px;
+  }
+  #sy li{
+      float: left;
+     margin: 0px 40px;
+     padding: 8px;
+
+  }
+#sy a{
+    text-decoration: none;
+    color: white;
+}
+.t1{
+    height: 20px;
+}
+.t50{
+    width: 15 px;
+}
+#c1{
+    background-image: url(素材/背景.jpg);
+    width: 100%;
+    height: 750px;
+    border: 2px solid;
+    
+}
+.t2{
+    text-align: center;
+    margin: 180px;
+    font-size: 32px;
+    position: relative;
+}
+#t3{
+    width: 750px;
+    height: 40px;
+}
+#t3:focus{
+    outline: none;
+}
+#t4{
+    width: 40px;
+    position: absolute;
+    top: 93px;
+    left: 355px;
+}
+.t5>li{
+     float: left;
+    margin: 0;
+    padding: 55px;
+    width: 180px;
+    height: 70px;
+}
+.t5 p{
+    text-align: center;
+    padding: 40px;
+    
+}
+.t6{
+    width: 100%;
+    height: 550px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.t8{
+   padding:  0 200px;
+   }
+ h1{
+       padding: 10px;
+   }
+.t10{
+    padding: 0 100px;
+    position: relative; 
+    height: 550px; 
+}
+.t11{
+    position: absolute;
+    right: 600px;
+    top: 180px;
+    bottom: 20px;
+    width: 300px;
+}
+p{
+    padding: 20px;
+}
+a{
+    padding: 20px;
+}
+.t13{
+    height: 700px;
+
+    position: relative;
+}.t14{
+    position: absolute;
+    right: 350px;
+    top: 190px;
+}
+.t15{
+    width: 100px;
+    height: 100px;
+    padding: 0 200px;
+}
+.t16{
+    height: 390px;
+    background-image:url(素材/p10.jpg);
+    background-size: 1910px;
+    position: relative;
+}
+.t17{
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 150px;
+    left: 500px;
+}
+.t18{
+    height: 500px;
+    width: 1910px;
+}
+.t19{
+    width: 400px;
+    height: 420px;
+    float: left;
+    margin-left:180px;
+    padding-top: 60px;
+    
+}
+.t22{
+    width: 300px;
+    height: 250px;
+}
+.t23{
+    width: 1358px;
+    height: 400px;
+    position: relative;
+   
+}
+.t24{
+    width: 500px;
+    height: 170px;
+    position: absolute;
+    top: 100px;
+    left: 500px;
+
+}
+.t25{
+     position: absolute;
+     right: 10px;
+     top: 100px;
+}
+.t26{
+    width: 400px;
+    height: 200px;
+    
+}
+.t27{
+    
+    height: 400px;
+    position: relative;
+}
+.t28{
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    top: 60px;
+    left: 450px;
+
+}
+.t29{
+    width: 450px;
+    height: 200px;
+    position: absolute;
+    right:450px ;
+    top: 60px;
+}
+.t30{
+    height: 336px;
+    width: 1000px;
+    text-align: center;
+    margin: auto;
+}
+.t31{
+    width: 100%;
+    height: 280px;
+    padding: 30px;
+}
+.t34{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin: auto;
+}
+.t32{
+    height: 190px;
+    width: 550px;
+    position: absolute;
+    left: 480px;
+    margin: 50px;
+}
+.t33{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 600px;
+    top: 50px;
+}
+.t35{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding: 50px;
+}
+.t36{
+    width: 100%;
+    height: 1100px;
+    text-align: center;
+    padding: 50px;
+}
+.t37{
+    width: 100%;
+    height:400px ;
+    font-size: 8px;
+}
+.t44{
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+}
+.div1{
+    width: 100%;
+    /* margin: auto; */
+    /* border: 1px solid red; */
+}
+.t38{
+    width: 100%;
+    position: absolute;
+    /* left: 400px;
+    top: 10px; */
+    display: block;
+    padding-left: 440px;
+    margin: 20px 0;
+}
+#pg{
+    width: 20px;
+    vertical-align: auto;
+}
+
+.t40,.t39,.t41,.t42{
+   display: -webkit-flex;
+   display: flex;
+   display: inline-block;
+   vertical-align: top;
+   width: 250px;
+   height: 200px;
+   padding-left: 100px;
+}
+
+
+a{
+    text-decoration:none;
+}
+.t43>ul>li{
+    height: 15px;
+    float: left;
+    
+}
+.t43{
+    width: 700px;
+    height: 100px;
+    margin: 0 400px;
+}
+.t49{
+    margin: 0 400px;
+}
+#maodian{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 50px 20px;
+}

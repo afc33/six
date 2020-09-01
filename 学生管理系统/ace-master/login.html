@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="utf-8" />
+		<title>Login Page - Ace Admin</title>
+
+		<meta name="description" content="User login page" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+		<!-- bootstrap & fontawesome -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/font-awesome/4.5.0/css/font-awesome.min.css" />
+		<script src="../shuju.js" type="text/javascript"></script>
+		<!-- text fonts -->
+		<link rel="stylesheet" href="assets/css/fonts.googleapis.com.css" />
+
+		<!-- ace styles -->
+		<link rel="stylesheet" href="assets/css/ace.min.css" />
+
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" href="assets/css/ace-part2.min.css" />
+		<![endif]-->
+		<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+
+		<!--[if lte IE 9]>
+		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+		<![endif]-->
+
+		<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+
+		<!--[if lte IE 8]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+		<style>
+			#hong{
+				color: red;
+				position: absolute;
+				left: 120px;
+				bottom: 60px;
+				display: none;
+
+			}
+			.widget-main{
+				position: relative;
+				margin: 0 auto;
+
+			}
+			
+		</style>
+	</head>
+
+	<body  class="login-layout">
+		<div class="main-container">
+			<div class="main-content">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="login-container">
+							<div class="center">
+								<h1>
+									<i class="ace-icon fa fa-leaf green"></i>
+									<span class="red">清华大学</span>
+									<span class="white" id="id-text2">学生管理系统</span>
+								</h1>
+								
+							</div>
+
+							<div class="space-6"></div>
+
+							<div class="position-relative">
+								<div id="login-box" class="login-box visible widget-box no-border">
+									<div class="widget-body">
+										<div class="widget-main">
+											<h4 class="header blue lighter bigger">
+												<i class="ace-icon fa fa-coffee green"></i>
+												欢迎登录
+											</h4>
+
+											<div class="space-6"></div>
+
+											<form>
+												<fieldset>
+													<label class="block clearfix">
+														<span class="block input-icon input-icon-right">
+															<input type="text" id="yhm" class="form-control" placeholder="请输入账户" />
+															<i class="ace-icon fa fa-user"></i>
+														</span>
+													</label>
+													<label class="block clearfix">
+														<span class="block input-icon input-icon-right">
+															<input type="password" id="mm" class="form-control" placeholder="请输密码" />
+															<i class="ace-icon fa fa-lock"></i>
+														</span>
+														<p id="hong">账户或密码错误</p>
+													</label>
+
+													<div class="space"></div>
+
+													<div class="clearfix">
+														<label class="inline">
+															<input type="checkbox" class="ace" />
+															<span class="lbl"> 记住密码</span>
+														</label>
+
+														<button type="button" id='dl' class="width-35 pull-right btn btn-sm btn-primary">
+															<i class="ace-icon fa fa-key"></i>
+															<span class="bigger-110">登录</span>
+														</button>
+													</div>
+														
+													<div class="space-4"></div>
+												</fieldset>
+											</form>
+											<div class="space-6"></div>
+
+											
+										</div><!-- /.widget-main -->
+
+										<div class="toolbar clearfix">
+											<div>
+												<a href="#" data-target="#forgot-box" class="forgot-password-link">
+													<i class="ace-icon fa fa-arrow-left"></i>
+													忘记密码
+												</a>
+											</div>
+
+											
+										</div>
+									</div><!-- /.widget-body -->
+								</div><!-- /.login-box -->
+
+								<div id="forgot-box" class="forgot-box widget-box no-border">
+									<div class="widget-body">
+										<div class="widget-main">
+											<h4 class="header red lighter bigger">
+												<i class="ace-icon fa fa-key"></i>
+												找回密码
+											</h4>
+
+											<div class="space-6"></div>
+											<p>
+												输入您的电子邮件并接收说明
+											</p>
+
+											<form>
+												<fieldset>
+													<label class="block clearfix">
+														<span class="block input-icon input-icon-right">
+															<input type="email" class="form-control" placeholder="电子邮件" />
+															<i class="ace-icon fa fa-envelope"></i>
+														</span>
+													</label>
+
+													<div class="clearfix">
+														<button type="button" class="width-35 pull-right btn btn-sm btn-danger">
+															<i class="ace-icon fa fa-lightbulb-o"></i>
+															<span class="bigger-110">发给我</span>
+														</button>
+													</div>
+												</fieldset>
+											</form>
+										</div><!-- /.widget-main -->
+
+										<div class="toolbar center">
+											<a href="#" data-target="#login-box" class="back-to-login-link">
+												回到登陆
+												<i class="ace-icon fa fa-arrow-right"></i>
+											</a>
+										</div>
+									</div><!-- /.widget-body -->
+								</div><!-- /.forgot-box -->
+
+								<div id="signup-box" class="signup-box widget-box no-border">
+									<div class="widget-body">
+										<div class="widget-main">
+											<h4 class="header green lighter bigger">
+												<i class="ace-icon fa fa-users blue"></i>
+												New User Registration
+											</h4>
+
+											<div class="space-6"></div>
+											<p> Enter your details to begin: </p>
+
+											<form>
+												<fieldset>
+													<label class="block clearfix">
+														<span class="block input-icon input-icon-right">
+															<input type="email" class="form-control" placeholder="Email" />
+															<i class="ace-icon fa fa-envelope"></i>
+														</span>
+													</label>
+							
+													<label class="block clearfix">
+														<span class="block input-icon input-icon-right">
+															<input type="text"  class="form-control" placeholder="Username" />
+															<i class="ace-icon fa fa-user"></i>
+														</span>
+													</label>
+													
+													<label class="block clearfix">
+														<span class="block input-icon input-icon-right">
+															<input type="password"  class="form-control" placeholder="Password" />
+															<i class="ace-icon fa fa-lock"></i>
+														</span>
+													</label>
+
+													<label class="block clearfix">
+														<span class="block input-icon input-icon-right">
+															<input type="password" class="form-control" placeholder="Repeat password" />
+															<i class="ace-icon fa fa-retweet"></i>
+														</span>
+													</label>
+
+													<label class="block">
+														<input type="checkbox" class="ace" />
+														<span class="lbl">
+															I accept the
+															<a href="#">User Agreement</a>
+														</span>
+													</label>
+
+													<div class="space-24"></div>
+
+													<div class="clearfix">
+														<button type="reset" class="width-30 pull-left btn btn-sm">
+															<i class="ace-icon fa fa-refresh"></i>
+															<span class="bigger-110">Reset</span>
+														</button>
+
+														<button type="button" class="width-65 pull-right btn btn-sm btn-success">
+															<span class="bigger-110">Register</span>
+
+															<i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+														</button>
+													</div>
+												</fieldset>
+											</form>
+										</div>
+
+										<div class="toolbar center">
+											<a href="#" data-target="#login-box" class="back-to-login-link">
+												<i class="ace-icon fa fa-arrow-left"></i>
+												Back to login
+											</a>
+										</div>
+									</div><!-- /.widget-body -->
+								</div><!-- /.signup-box -->
+							</div><!-- /.position-relative -->
+
+							<div id="bj" class="navbar-fixed-top align-right">
+								<br />
+								&nbsp;
+								<a id="btn-login-dark" href="#">Dark</a>
+								&nbsp;
+								<span class="blue">/</span>
+								&nbsp;
+								<a id="btn-login-blur" href="#">Blur</a>
+								&nbsp;
+								<span class="blue">/</span>
+								&nbsp;
+								<a id="btn-login-light" href="#">Light</a>
+								&nbsp; &nbsp; &nbsp;
+							</div>
+						</div>
+					</div><!-- /.col -->
+				</div><!-- /.row -->
+			</div><!-- /.main-content -->
+		</div><!-- /.main-container -->
+
+		<!-- basic scripts -->
+
+		<!--[if !IE]> -->
+
+
+		
+
+
+
+
+
+
+
+		<script src="assets/js/jquery-2.1.4.min.js"></script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+<script src="assets/js/jquery-1.11.3.min.js"></script>
+<![endif]-->
+		<script type="text/javascript">
+			if('ontouchstart' in document.documentElement) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+		</script>
+
+		<!-- inline scripts related to this page -->
+		<script type="text/javascript">
+			jQuery(function($) {
+			 $(document).on('click', '.toolbar a[data-target]', function(e) {
+				e.preventDefault();
+				var target = $(this).data('target');
+				$('.widget-box.visible').removeClass('visible');//hide others
+				$(target).addClass('visible');//show target
+			 });
+			});
+			
+			
+			
+			//you don't need this, just used for changing background
+			jQuery(function($) {
+			 $('#btn-login-dark').on('click', function(e) {
+				$('body').attr('class', 'login-layout');
+				$('#id-text2').attr('class', 'white');
+				$('#id-company-text').attr('class', 'blue');
+				
+				e.preventDefault();
+			 });
+			 $('#btn-login-light').on('click', function(e) {
+				$('body').attr('class', 'login-layout light-login');
+				$('#id-text2').attr('class', 'grey');
+				$('#id-company-text').attr('class', 'blue');
+				
+				e.preventDefault();
+			 });
+			 $('#btn-login-blur').on('click', function(e) {
+				$('body').attr('class', 'login-layout blur-login');
+				$('#id-text2').attr('class', 'white');
+				$('#id-company-text').attr('class', 'light-blue');
+				
+				e.preventDefault();
+			 });
+			 
+			});
+
+
+
+			//  记住密码
+			function setCookie(){   
+                 var loginCode = $("#yhm").val(); //获取用户名信息    
+                 var pwd = $("#mm").val(); //获取登陆密码信息    
+                 var checked = $("input[type='checkbox']").is(':checked');//获取“是否记住密码”复选框  
+                   //console.log("setCookie方法是否记住密码："+checked);
+                 if(checked){ //判断是否选中了“记住密码”复选框    
+                     //设置cookie过期时间
+                     var date = new Date();
+                    date.setTime(date.getTime()+60*1000);//只能这么写，60表示60秒钟
+                    //console.log("cookie过期时间："+date);
+                    $.cookie("login_code",loginCode,{ expires: date, path: '/' });//调用jquery.cookie.js中的方法设置cookie中的用户名    
+                    $.cookie("pwd",$.base64.encode(pwd),{ expires: date, path: '/' });//调用jquery.cookie.js中的方法设置cookie中的登陆密码，并使用base64（jquery.base64.js）进行加密
+                 }else{     
+                     $.cookie("login_code", null);  
+                    $.cookie("pwd", null);     
+                 }      
+            } 
+            
+            //清除所有cookie函数
+            function clearAllCookie() {
+                var date=new Date();
+                date.setTime(date.getTime()-10000);
+                var keys=document.cookie.match(/[^ =;]+(?=\=)/g);
+                console.log("需要删除的cookie名字："+keys);
+                if (keys) {
+                    for (var i =  keys.length; i--;)
+                      document.cookie=keys[i]+"=0; expire="+date.toGMTString()+"; path=/";
+                }
+            }
+            //获取cookie    
+            function getCookie(){ 
+                 var loginCode = $.cookie("login_code"); //获取cookie中的用户名    
+                 var pwd =  $.cookie("pwd"); //获取cookie中的登陆密码  
+                 console.log("获取cookie:账户："+loginCode);
+                 console.log("获取cookie:密码："+pwd);
+                 if (!loginCode||loginCode==0) {
+                      console.log("账户："+!loginCode);
+                      //alert("请输出内容！");
+                 }else{
+                     $("#yhm").val(loginCode);   
+                 }
+                 if(!pwd||pwd==0){
+                     console.log("密码："+!pwd);
+                 }else{
+                     //密码存在的话把密码填充到密码文本框    
+                     //console.log("密码解密后："+$.base64.decode(pwd));
+                    $("#mm").val($.base64.decode(pwd));
+                    //密码存在的话把“记住用户名和密码”复选框勾选住    
+                    $("[name='jizhu']").attr("checked","true");
+                 }
+				
+				}
+			
+
+
+
+
+			     var useArr = [
+                {user:"boss",pw:"boss",private:1},
+ 				{user:"boss1",pw:"boss1",private:1},
+                // 老师
+                {user:"bzr",pw:"bzr",private:2},
+                {user:"bzrzs",pw:"bzrzs",private:2},
+                {user:"gbbzr",pw:"gbbzr",private:2},
+                //学生
+                {user:"mm",pw:"mm",private:3},
+                {user:"lm",pw:"lm",private:3},
+                {user:"xw",pw:"xw",private:3},
+				{user:"sz",pw:"sz",private:3},
+				{user:"jzy",pw:"fc",private:3},
+				{user:"fd",pw:"fc",private:3},
+                {user:"ww",pw:"ww",private:3},
+				{user:"yq",pw:"yq",private:3},
+				{user:"yf",pw:"yf",private:3},
+				{user:"yx",pw:"yx",private:3},
+				{user:"gl",pw:"gl",private:3},
+				{user:"jyl",pw:"jyl",private:3},
+				{user:"py",pw:"py",private:3},
+                {user:"jc",pw:"jc",private:3},
+                {user:"hjc",pw:"hjc",private:3},
+                {user:"fc",pw:"fc",private:3},
+				{user:"fed",pw:"fed",private:3},
+            ];
+			var a = document.getElementById("homg");
+					
+		
+            $("#dl").click(function(){
+	console.log($('#yhm').attr('value'));
+                var yhm = $("#yhm").val();
+                var mm= $("#mm").val();
+					// console.log(yhm)
+					
+                var privacyFlag = 0;
+                $.each(useArr,function(i,v){
+					console.log(useArr.length,i)
+                    if(yhm == v.user && mm == v.pw){
+                        privacyFlag = v.private;
+					if(privacyFlag){teacher
+						console.log(privacyFlag);
+						localStorage.setItem('sq',JSON.stringify(sj)); 
+						localStorage.setItem('teacher',JSON.stringify(teacher));
+						localStorage.setItem('student',JSON.stringify(student));
+						location.href= 'lianxi.html#'+privacyFlag+'#'+yhm;
+				
+				            }
+					return;
+			}
+
+
+		})
+		if(!privacyFlag){
+				document.getElementById('hong').style.display="block";	
+			}
+})
+
+
+			
+					
+			
+        </script>
+		</script>
+	</body>
+</html>
+ 

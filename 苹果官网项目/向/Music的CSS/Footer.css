@@ -1,0 +1,79 @@
+footer{
+    height: 505px;
+    font-size: 10px;
+    color: #87878c;
+    background-color: #f5f5f7;
+}
+footer>div{
+    width: 50%;
+    margin: 0 auto;
+}
+
+footer>div:first-child,footer>div:last-child{
+    height: 50px;
+    line-height: 50px;
+}
+#end>div:first-child{
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#end>div:first-child>img{
+    float: left;
+    padding-right: 10px;
+}
+#end>div:first-child>img:first-child{
+    height: 100px;
+}
+.arrows{
+    height: 50px;
+}
+#end a{
+    color: #75757a;
+    text-decoration: none;
+}
+#end>div a:hover,footer>div:last-child a:hover{
+    color: black;
+    text-decoration: underline;
+}
+#end>div:last-child{
+    padding-bottom: 5px;
+}
+#end>div:last-child a{
+    color: #0267cc;
+}
+#list{
+    height: 330px;
+}
+#list>div{
+    float: left;
+    padding-right: 69px;
+}
+#list h1{
+    font-size: 12px;
+    color: black;
+}
+#list li{
+    padding-top: 10px;
+}
+#list>div>div:nth-child(2){
+    padding-top: 20px;
+}
+footer>div:last-child p,footer>div:last-child ul,footer>div:last-child li{
+    float: left;
+}
+footer>div:last-child p{
+    padding-right: 30px;
+}
+footer>div:last-child li:not(:first-child):before{
+    content: "|";
+}
+footer>div:last-child a{
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 10px;
+    color: #75757a;
+}

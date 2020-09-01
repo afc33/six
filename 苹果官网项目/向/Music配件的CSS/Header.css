@@ -1,0 +1,41 @@
+.NavTop li a{
+    text-decoration: none;
+    color:rgb(214,214,214) ;
+}
+.NavTop li a:hover{
+    color:rgb(255,255,255) ;
+}
+#deadernavtop{
+    height: 55px;
+    background-color: rgb(51,51,51);
+}
+.divUl{
+    height: 55px;
+    padding-left: 160px;
+    overflow: hidden;
+}
+.NavTop img{
+    width: 20px;
+}
+.NavTop>li{
+    float: left;
+    font-size: 15px;
+    margin-left: 80px;
+    line-height: 55px;
+    height: 55px;
+}
+.NavTop>li>a{
+    color: rgb(219,219,219);
+}
+.NavTop{
+    width: 58%;
+    margin: auto;
+    height: 55px;
+    text-align: center;
+}
+#top{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 100px;
+}

@@ -1,0 +1,159 @@
+#idS1{
+    width: 100%;
+    height: 570px;
+    overflow: hidden;
+    animation: appleBC 4s linear 1s forwards;
+}
+@keyframes appleBC {
+    0%,15%{
+        /*��ɫ����*/
+        background: radial-gradient(at right bottom, #fb7a4d, rgba(193, 73, 133, 0.85));
+    }
+    30%,45%{
+        background: radial-gradient(at right bottom, #ff5f85, rgba(175, 59, 131, 0.87));;
+    }
+    60%,75%{
+        background: radial-gradient(at right bottom, #d43b9d, rgba(121, 0, 135, 0.87));
+    }
+    90%,100%{
+        background: radial-gradient(at right bottom, #6b48e8, rgb(149, 0, 144));
+    }
+}
+#s1hHead{
+    height: 113px;
+    /*����һ��͸����0.1�Ļ�ɫ�߿�*/
+    background-color: rgba(250,250,250,0.1);
+}
+#s1hHead a{
+    color: rgb(250, 250, 250);
+}
+#s1hHead a:hover{
+    color: rgb(215, 204, 250)
+}
+
+#s1hHead>div{
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+}
+#s1hHead ul{
+    width: 40%;
+    margin: 0 auto;
+}
+#s1hHead ul>img{
+    width: 25px;
+    height: 54px;
+}
+#s1hHead ul>li{
+    width: 80px;
+    height: 90px;
+    float: left;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 15px;
+    padding-left: 27px;
+}
+#idS1>div:nth-child(2){
+    width: 48%;
+    height: 456px;
+    float: right;
+}
+#s1Img>div{
+    height: 2730px;
+    animation: appleImg 4s linear 1s forwards;
+    transition: all 1s;
+}
+#s1Img{
+    overflow: hidden;
+}
+#s1Img>div>div{
+    height: 455px;
+    padding-left: 11%;
+}
+#s1Img1 img{
+    width: 600px;
+    padding-top: 60px;
+}
+#s1Img2{
+    position: relative;
+}
+#s1Img2 img{
+    height: 440px;
+}
+#s1Img2 img:nth-child(1),#s1Img4 img:nth-child(1){
+    position: absolute;
+    top: 30px;
+}
+#s1Img2 img:nth-child(3){
+    position: absolute;
+    top: 45px;
+    right: 195px;
+}
+#s1Img3{
+    overflow: hidden;
+}
+#s1Img3 img{
+    height: 545px;
+    padding-left: 45px;
+    padding-top: 45px;
+}
+#s1Img4{
+
+    position: relative;
+    height: 455px;
+}
+#s1Img4 img{
+    height: 550px;
+}
+#s1Img4 img:nth-child(2){
+    padding-top: 60px;
+}
+#s1Img4 img:nth-child(3){
+    position: absolute;
+    top: 50px;
+    left: 80px;
+}
+@keyframes appleImg {
+    0%,10%{
+        margin-top: 0;
+    }
+    30%,45%{
+        margin-top: -455px;
+    }
+    60%,75%{
+        margin-top: -910px;
+    }
+    90%,100%{
+        margin-top: -1365px;
+    }
+}
+
+#s1Font{
+    padding-top: 7%;
+    padding-left: 20%;
+}
+#s1FontTop{
+    overflow: hidden;
+}
+#s1Font img{
+    width: 70px;
+    height: 20px;
+}
+#s1FontTop{
+    padding-bottom: 25px;
+}
+#s1FontTop h1{
+    font-size: 40px;
+}
+#s1Font a:first-child{
+    padding-right: 40px;
+}
+#s1Font a:nth-child(2){
+    color: white;
+}
+#s1Font button{
+    width: 85px;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+}

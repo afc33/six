@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+        }
+        .box{
+            position: relative;
+            width: 50%;
+            height: 400px;
+            margin: auto;
+            border-radius: 20px;
+            /*border: 1px solid red;*/
+            text-align: center;
+            /* margin-top: 100px; */
+            background: linear-gradient(to bottom right,#50a3a2,#53e3a6);
+            overflow: hidden;
+        }
+        .login{
+            position: absolute;
+            margin:80px auto;
+            right: 0;
+            left: 0px;
+            z-index: 1;
+        }
+        h1{
+            padding-bottom: 20px;
+            color: white;
+            opacity: 0.9;
+        }
+        label{
+            color: white;
+            opacity: 0.9;
+        }
+        button{
+            width: 100px;
+            height: 30px;
+            margin-top: 20px;
+            border-radius: 10px;
+            border:0;
+            /*opacity: 0.1;*/
+            /*background-color: white;*/
+        }
+        button:focus{
+            outline: none;
+        }
+        button:hover{
+            cursor:pointer;
+        }
+        input{
+            height: 30px;
+            width: 200px;
+            margin: 10px;
+            border-radius: 10px;
+            border: 0px;
+        }
+        input:focus{
+            outline: none;
+        }
+        ul{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        li{
+            display: block;
+            position: absolute;
+            bottom: -100px;
+            width: 15px;
+            height: 15px;
+            background-color:rgba(255, 255, 255, 0.15);
+            animation: square 10s infinite;
+        }
+        li:nth-child(1){
+            left: 0;
+            animation-delay: 1.2s;
+        }
+        li:nth-child(2){
+            width: 40px;
+            height: 40px;
+            left: 5%;
+            animation-delay: 2.2s;
+        }
+        li:nth-child(3){
+            width: 25px;
+            height: 25px;
+            left: 10%;
+            animation-delay: 2s;
+        }
+        li:nth-child(4){
+            width: 50px;
+            height: 50px;
+            left: 15%;
+            animation-delay: 4.2s;
+        }
+        li:nth-child(5){
+            width: 60px;
+            height: 60px;
+            left: 20%;
+            animation-delay: 3.2s;
+        }
+        li:nth-child(6){
+            width: 10px;
+            height: 10px;
+            left: 30%;
+            animation-delay: 1.3s;
+        }
+        li:nth-child(7){
+            width: 60px;
+            height: 60px;
+            left: 40%;
+            animation-delay: 3.4s;
+        }
+        li:nth-child(8){
+            width: 70px;
+            height: 70px;
+            left: 50%;
+            animation-delay: 3s;
+        }
+        li:nth-child(9){
+            width: 50px;
+            height: 50px;
+            left: 60%;
+            animation-delay: 1s;
+        }
+        li:nth-child(10){
+            width: 90px;
+            height: 90px;
+            left: 70%;
+            animation-delay: 4s;
+        }
+        li:nth-child(11){
+            width: 30px;
+            height: 30px;
+            left: 80%;
+            animation-delay: 3s;
+        }
+        li:nth-child(12){
+            width: 50px;
+            height: 50px;
+            left: 90%;
+            animation-delay: 5s;
+        }
+        @keyframes square {
+            0%  {
+
+            }
+            100% {
+                bottom: 500px;
+                transform: rotate(600deg);
+                transform: translateY(-500)
+            }
+
+        }
+        #div{
+            width: 100%;
+            height: 300px;
+            text-align: center;
+            /* border: 1px solid red; */
+        }
+        #div h1{
+            color: #53e3a6;
+            font-size:60px;
+            line-height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+        <h1>W227 六组Apple项目</h1>
+    </div>
+    <div class="box">
+        <div class="signin">
+            <div class="login">
+                <form action="../首页.html">
+                    <h1>请登录</h1>
+                    <div>
+                        <label for="name">用户名：<input type="text" required  placeholder="请输入用户名" id="name"/></label>
+                    </div>
+                    <div>
+                        <label for="pwd">密&emsp;码：<input type="password" required placeholder="请输入密码" id="pwd"/></label>
+                    </div>
+                    <button>登录</button>
+                </form>
+            </div>
+        </div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>

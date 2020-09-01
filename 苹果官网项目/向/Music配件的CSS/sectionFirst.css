@@ -1,0 +1,85 @@
+#s1Head{
+    width: 68%;
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+}
+#s1Head p{
+    line-height: 60px;
+}
+#s1Head p:first-child{
+    float: left;
+}
+#s1Head p:nth-child(2){
+    float: right;
+    font-size: 10px;
+}
+#s1Head>p:nth-child(2):hover{
+    /*background-color: red;*/
+}
+#s1Head>p:nth-child(2):hover+#downList{
+    display: block;
+}
+
+#downList{
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    display: none;
+    clear:both ;
+}
+#downList:hover{
+    display: block;
+}
+#downList li{
+    font-size: 13px;
+    height: 30px;
+}
+#downList a:hover{
+    color: #5a51ff;
+}
+#s1list1{
+    width: 25%;
+    float: left;
+}
+#s1list1 li:last-child{
+    color: rgba(180, 180, 185, 0.89);
+}
+#s1list1 li:first-child,#s1list2 li:first-child{
+    color: black;
+    font-weight: bold;
+}
+#s1list2 div{
+    height: 230px;
+    border: 0.5px solid #87878c;
+    float: left;
+    margin-right: 30px;
+}
+#s1list2,#s1list2 li:first-child{
+    overflow: hidden;
+}
+
+#s1list2 li:not(:first-child){
+    width: 31%;
+    float: left;
+}
+#idS1>div:last-child{
+    height: 200px;
+    background-color: #fafafa;
+}
+#idS1>div:last-child>div{
+    width: 68%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#idS1 img{
+    margin-top: -100px;
+    height: 300px;
+    float: right;
+}
+#idS1>div:last-child p{
+    font-size: 30px;
+    line-height: 200px;
+}

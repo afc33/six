@@ -1,0 +1,28 @@
+#idS2{
+    background-color: black;
+    margin-top: 20px;
+    height: 500px;
+    overflow: hidden;
+}
+#idS2 img{
+    /*float: right;*/
+    height: 500px;
+}
+#idS2>div:first-child{
+    width: 41%;
+    float: right;
+}
+#idS2>div:nth-child(2){
+    width: 15%;
+    text-align: center;
+    height: 500px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.classD1 h1{
+    font-size: 35px;
+    padding-top: 15px;
+}
+.classD1>div{
+    padding-top: 15px;
+}
