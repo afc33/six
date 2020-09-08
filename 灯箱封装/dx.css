@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    text-align: center;
+}
+#box{
+    width: 100%;
+    height: 800px;
+    margin: 50px;
+    
+}
+img{
+    width: 500px;
+    height: 350px;
+}
+.lightbox-item{
+    width: 500px;
+    height: 350px;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    
+}
+figcaption{
+    position: absolute;
+    color: yellow;
+    font-size: 32px;
+    left: 45%;
+    top: 45%;
+    
+    
+}
+figcaption:hover{
+   border:2px solid white;
+
+}
+
+
+    .fillbg {
+        background-color: rgba(0, 0, 0, 0.6);
+        bottom: 0;
+        height: 100%;
+        left: 0; 
+        opacity: 0; 
+        position: fixed; 
+        right: 0; 
+        top: 0; 
+        width: 100%; 
+        z-index: 1100; 
+        display:none; 
+    }
+.fillbg-active {
+ opacity: 1; 
+ display:block; 
+}
+
+.bgImg{
+    max-width: 100%; 
+    max-height: 100%; 
+    position: fixed;
+    display: none;
+}

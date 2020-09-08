@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    position: relative;
+    width: 700px;
+    height: 470px;
+    margin:  auto;
+    /* border: 1px solid red; */
+}
+.box img{
+    width: 700px;
+    height: 470px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+/* 默认显示第一张图片 */
+.box img:nth-child(1){
+    display: block;
+}
+
+/* 切换小圆点  */
+.box ul{ 
+    position: absolute;
+    left: 250px;
+    bottom: 20px;
+
+}
+
+.box ul li{
+    list-style: none;
+    float: left;
+    width: 20px;
+    height: 20px;
+    background:blue;
+    margin: 5px 6px;
+    border-radius: 50%;
+}
+.box ul .listOne{
+    background: #ffffff;
+    border: 1px solid lightgray;
+    cursor: pointer; ;
+}
+.box div{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border:rgba(255, 255, 255, 0.5);
+    top: 200px;
+    font-size: 40px;
+    color:rgba(255,255,255,0.8);
+    font-weight: bolder;
+    font-family: "黑体";
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    user-select: none;   
+    /* 无法选择内容 */
+}
+.box .leftBtn{
+    left: 0px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.box .rightBtn{
+    right: 0px; 
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
